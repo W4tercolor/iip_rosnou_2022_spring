@@ -24,6 +24,13 @@ void __fastcall TForm1::ShowRecord(){
 	LabelCount->Caption = IntToStr(iMax);
 	LabelCurrent->Caption = IntToStr(iCur+1);
 }
+
+void __fastcall TForm1::ClearFields(){
+	EditOrder->Text="";
+	EditName->Text="";
+	EditAddress->Text="";
+	EditPhone->Text="";
+}
 //---------------------------------------------------------------------------
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)
@@ -43,6 +50,7 @@ void __fastcall TForm1::ButtonAddClick(TObject *Sender)
 	iCur=iMax;
 	iMax++;
 	ShowRecord();
+	ClearFields();
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::ButtonLeftClick(TObject *Sender)
@@ -57,3 +65,4 @@ void __fastcall TForm1::ButtonRightClick(TObject *Sender)
 	ShowRecord();
 }
 //---------------------------------------------------------------------------
+

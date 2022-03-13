@@ -43,6 +43,7 @@ __published:	// IDE-managed Components
 	TButton *ButtonDelete;
 	TEdit *EditOrder;
 	void __fastcall ShowRecord();
+	void __fastcall ClearFields();
 	void __fastcall ButtonAddClick(TObject *Sender);
 	void __fastcall ButtonLeftClick(TObject *Sender);
 	void __fastcall ButtonRightClick(TObject *Sender);

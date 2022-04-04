@@ -17,8 +17,8 @@ object Form1: TForm1
   object LabelCurrent: TLabel
     Left = 148
     Top = 200
-    Width = 12
-    Height = 18
+    Width = 6
+    Height = 13
     Caption = '0'
   end
   object Label2: TLabel
@@ -128,16 +128,6 @@ object Form1: TForm1
     Caption = #1059#1076#1072#1083#1080#1090#1100
     TabOrder = 7
   end
-  object ButtonSave: TButton
-    Left = 208
-    Top = 247
-    Width = 80
-    Height = 28
-    Caption = 'Save'
-    Images = ImageList1
-    TabOrder = 8
-    OnClick = ButtonSaveClick
-  end
   object OpenDialog1: TOpenDialog
     Left = 16
     Top = 280
@@ -152,7 +142,7 @@ object Form1: TForm1
     Left = 168
     Top = 280
     Bitmap = {
-      494C010104004400800020002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010104004400840020002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000004000000001002000000000000080
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

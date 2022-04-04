@@ -66,37 +66,6 @@ void __fastcall TForm1::ButtonRightClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TForm1::ButtonSaveClick(TObject *Sender)
-{
-	if(SaveDialog1->Execute()){
-		FILE *f = fopen (AnsiString(SaveDialog1->FileName).c_str(),"wb");
-		fwrite (&orderdb[0],sizeof(order),iMax,f);
-		fclose(f);
-
-	}
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TForm1::ButtonOpenClick(TObject *Sender)
-{
-	if(OpenDialog1->Execute()){
-		FILE *f = fopen (AnsiString(OpenDialog1->FileName).c_str(),"rb");
-		orderdb.clear();
-		do{
-			order s;
-			fread(&s,sizeof(order),1,f);
-			if(feof(f)) break;
-			orderdb.push_back(s);
-		} while(!feof(f));
-		iMax=orderdb.size();
-		iCur=0;
-		ShowRecord();
-	}
-}
-//---------------------------------------------------------------------------
-
-
-
 void __fastcall TForm1::ButtonSave1Click(TObject *Sender)
 {
  	if(SaveDialog1->Execute()){

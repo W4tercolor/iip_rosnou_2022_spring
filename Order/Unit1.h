@@ -13,6 +13,7 @@
 #include <Vcl.Menus.hpp>
 #include <vector>
 #include <String.h>
+#include <algorithm>
 //---------------------------------------------------------------------------
 
 class order{
@@ -21,7 +22,18 @@ class order{
 		char phone [50];
 		int order;
 		char address [50] ;
+
+		bool friend operator==(const order &a, const order &b){
+		return(
+			strcmp (a.name, b.name)==0 ||
+			strcmp (a.phone, b.phone)==0 ||
+			strcmp (a.address, b.address)==0 ||
+			a.order==b.order
+		);
+	}
 };
+
+
 
 extern int iCur, iMax;
 extern std:: vector <order> orderdb;
@@ -33,7 +45,6 @@ __published:	// IDE-managed Components
 	TLabel *LabelCurrent;
 	TButton *ButtonRight;
 	TButton *ButtonLeft;
-	TLabel *Label2;
 	TLabel *LabelCount;
 	TLabel *LabelOrder;
 	TLabel *LabelName;
@@ -49,16 +60,25 @@ __published:	// IDE-managed Components
 	TSaveDialog *SaveDialog1;
 	TImageList *ImageList1;
 	TMainMenu *MainMenu1;
-	TMenuItem *N1;
+	TMenuItem *ButtonFile;
 	TMenuItem *ButtonSave1;
 	TMenuItem *ButtonOpen1;
+	TMenuItem *N2;
+	TMenuItem *ButtonEdit;
+	TButton *Button1;
+	TLabel *Label1;
+	TImageList *ImageList2;
+	TMenuItem *ButtonSearch;
+	TEdit *EditSearch;
+	TLabel *Label2;
 	void __fastcall ShowRecord();
-	void __fastcall ClearFields();
 	void __fastcall ButtonAddClick(TObject *Sender);
 	void __fastcall ButtonLeftClick(TObject *Sender);
 	void __fastcall ButtonRightClick(TObject *Sender);
 	void __fastcall ButtonSave1Click(TObject *Sender);
 	void __fastcall ButtonOpen1Click(TObject *Sender);
+	void __fastcall ButtonDeleteClick(TObject *Sender);
+	void __fastcall ButtonSearchClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);

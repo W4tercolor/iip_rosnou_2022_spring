@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.498,\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Order\Unit1.dfm=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.498,\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Order\Unit1.h=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.559,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.501,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Project1PCH2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.873,\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Project1.cbproj=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Order\Project1.cbproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.151,\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Project1.cbproj=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Project1.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.604,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit4.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.921,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit5.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.225,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.886,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit2.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.441,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit2.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.662,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit3.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.873,\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Order\Project1.cbproj=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Project1.cbproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.168,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.979,\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Order\Project1PCH2.h=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Project1PCH2.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.498,\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Order\Unit1.cpp=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.559,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.604,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit4.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.498,\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit1.cpp=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Order\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.225,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.921,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit5.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.441,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.886,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.662,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.501,=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Project1PCH2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.498,\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit1.h=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Order\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.498,\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Unit1.dfm=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Order\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.979,\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Project1PCH2.h=\\nas\redirect\EmelyanovaPA\Documents\RAD Studio\Projects\Order\Project1PCH2.h</Transaction>
   </Transactions>
 </BorlandProject>

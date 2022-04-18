@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = #1047#1072#1082#1072#1079#1099
-  ClientHeight = 359
-  ClientWidth = 296
+  ClientHeight = 308
+  ClientWidth = 283
   Color = clInactiveCaption
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,65 +15,65 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object LabelCurrent: TLabel
-    Left = 170
-    Top = 56
-    Width = 13
+    Left = 159
+    Top = 72
+    Width = 6
     Height = 13
     Caption = '0'
   end
   object LabelCount: TLabel
     Left = 102
-    Top = 248
-    Width = 14
+    Top = 256
+    Width = 6
     Height = 13
     Caption = '0'
   end
   object LabelOrder: TLabel
     Left = 22
-    Top = 87
+    Top = 94
     Width = 74
     Height = 13
     Caption = ' '#1053#1086#1084#1077#1088'_'#1079#1072#1082#1072#1079#1072
   end
   object LabelName: TLabel
     Left = 22
-    Top = 114
+    Top = 121
     Width = 23
     Height = 13
     Caption = #1060#1048#1054
   end
   object LabelPhone: TLabel
     Left = 22
-    Top = 168
+    Top = 175
     Width = 44
     Height = 13
     Caption = #1058#1077#1083#1077#1092#1086#1085
   end
   object LabelAddress: TLabel
     Left = 22
-    Top = 141
+    Top = 148
     Width = 34
     Height = 13
     Caption = #1040#1076#1088#1077#1089' '
   end
   object Label1: TLabel
     Left = 102
-    Top = 56
-    Width = 69
-    Height = 16
+    Top = 72
+    Width = 51
+    Height = 13
     Caption = #1047#1072#1087#1080#1089#1100' '#8470
   end
   object Label2: TLabel
     Left = 8
-    Top = 248
+    Top = 256
     Width = 82
     Height = 13
     Caption = #1050#1086#1083'-'#1074#1086' '#1079#1072#1087#1080#1089#1077#1081':'
   end
   object ButtonRight: TButton
-    Left = 216
-    Top = 201
-    Width = 37
+    Left = 170
+    Top = 209
+    Width = 39
     Height = 25
     ImageAlignment = iaCenter
     ImageIndex = 2
@@ -82,9 +82,9 @@ object Form1: TForm1
     OnClick = ButtonRightClick
   end
   object ButtonLeft: TButton
-    Left = 41
-    Top = 201
-    Width = 37
+    Left = 84
+    Top = 209
+    Width = 40
     Height = 25
     ImageAlignment = iaCenter
     ImageIndex = 0
@@ -94,35 +94,35 @@ object Form1: TForm1
   end
   object EditOrder: TEdit
     Left = 121
-    Top = 84
+    Top = 91
     Width = 132
     Height = 21
     TabOrder = 2
   end
   object EditName: TEdit
     Left = 76
-    Top = 111
+    Top = 118
     Width = 177
     Height = 21
     TabOrder = 3
   end
   object EditAddress: TEdit
-    Left = 75
-    Top = 138
+    Left = 76
+    Top = 145
     Width = 178
     Height = 21
     TabOrder = 4
   end
   object EditPhone: TEdit
-    Left = 84
-    Top = 165
+    Left = 85
+    Top = 172
     Width = 169
     Height = 21
     TabOrder = 5
   end
   object ButtonAdd: TButton
-    Left = 13
-    Top = 35
+    Left = 41
+    Top = 27
     Width = 83
     Height = 25
     Caption = #1044#1086#1073#1072#1074#1080#1090#1100
@@ -131,8 +131,8 @@ object Form1: TForm1
     OnClick = ButtonAddClick
   end
   object ButtonDelete: TButton
-    Left = 189
-    Top = 35
+    Left = 170
+    Top = 27
     Width = 83
     Height = 25
     Caption = #1059#1076#1072#1083#1080#1090#1100
@@ -140,34 +140,53 @@ object Form1: TForm1
     OnClick = ButtonDeleteClick
   end
   object Button1: TButton
-    Left = 84
-    Top = 201
-    Width = 127
+    Left = 85
+    Top = 209
+    Width = 125
     Height = 25
     Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1080#1079#1084#1077#1085#1077#1085#1080#1103
     TabOrder = 8
+    OnClick = Button1Click
   end
   object EditSearch: TEdit
-    Left = 86
-    Top = 8
+    Left = 41
+    Top = 29
     Width = 97
     Height = 21
     TabOrder = 9
   end
+  object Search: TButton
+    Left = 159
+    Top = 27
+    Width = 44
+    Height = 25
+    Caption = 'Search'
+    TabOrder = 10
+    OnClick = SearchClick
+  end
+  object ButtonClose: TButton
+    Left = 209
+    Top = 27
+    Width = 43
+    Height = 25
+    Caption = 'ButtonClose'
+    TabOrder = 11
+    OnClick = ButtonCloseClick
+  end
   object OpenDialog1: TOpenDialog
-    Left = 24
-    Top = 304
+    Left = 8
+    Top = 288
   end
   object SaveDialog1: TSaveDialog
-    Left = 96
-    Top = 304
+    Left = 72
+    Top = 288
   end
   object ImageList1: TImageList
     ColorDepth = cd32Bit
-    Left = 168
-    Top = 304
+    Left = 128
+    Top = 288
     Bitmap = {
-      494C010103000800140010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010103000800180010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000201001BA97742E93D2E20890100
@@ -309,12 +328,13 @@ object Form1: TForm1
   object MainMenu1: TMainMenu
     Images = ImageList1
     Left = 240
-    Top = 304
+    Top = 288
     object ButtonFile: TMenuItem
       Hint = #1060#1072#1081#1083
       ImageIndex = 1
       object N2: TMenuItem
         Caption = #1057#1086#1079#1076#1072#1090#1100
+        OnClick = N2Click
       end
       object ButtonSave1: TMenuItem
         Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100'...'
@@ -337,10 +357,10 @@ object Form1: TForm1
     ColorDepth = cd32Bit
     Height = 32
     Width = 32
-    Left = 168
-    Top = 256
+    Left = 184
+    Top = 288
     Bitmap = {
-      494C010103000800200020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010103000800240020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000002000000001002000000000000040
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

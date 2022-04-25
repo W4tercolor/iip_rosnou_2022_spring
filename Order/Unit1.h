@@ -73,6 +73,11 @@ __published:	// IDE-managed Components
 	TLabel *Label2;
 	TButton *Search;
 	TButton *ButtonClose;
+	TCheckBox *Check1;
+	TCheckBox *Check2;
+	TCheckBox *Check3;
+	TCheckBox *Check4;
+	TButton *Button2;
 	void __fastcall ShowRecord();
 	void __fastcall ButtonAddClick(TObject *Sender);
 	void __fastcall ButtonLeftClick(TObject *Sender);
@@ -85,6 +90,7 @@ __published:	// IDE-managed Components
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall SearchClick(TObject *Sender);
 	void __fastcall ButtonCloseClick(TObject *Sender);
+	void __fastcall ButtonEditClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);

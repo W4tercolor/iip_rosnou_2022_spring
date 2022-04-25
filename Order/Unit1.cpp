@@ -55,6 +55,11 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 	 LabelCurrent->Visible= false;
 	 Label2->Visible= false;
 	 Label1->Visible= false;
+	 Check1->Visible= false;
+	 Check2->Visible= false;
+	 Check3->Visible= false;
+	 Check4->Visible= false;
+	 Button2->Visible= false;
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::ButtonAddClick(TObject *Sender)
@@ -68,6 +73,7 @@ void __fastcall TForm1::ButtonAddClick(TObject *Sender)
 	LabelCount->Caption = iMax;
 	LabelCurrent->Caption = iCur+1;
 
+	ButtonRight->Visible= false;
 	ButtonLeft->Visible= false;
 	 ButtonAdd->Visible=false;
 	 ButtonDelete->Visible= false;
@@ -84,6 +90,13 @@ void __fastcall TForm1::ButtonAddClick(TObject *Sender)
 	 LabelCurrent->Visible= true;
 	 Label2->Visible= true;
 	 Label1->Visible= true;
+
+	 EditName->Enabled=true;
+	 EditOrder->Enabled=true;
+	 EditPhone->Enabled=true;
+	 EditAddress->Enabled=true;
+
+	 Button2->Visible= true;
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::ButtonLeftClick(TObject *Sender)
@@ -144,6 +157,12 @@ void __fastcall TForm1::ButtonOpen1Click(TObject *Sender)
 	 LabelCurrent->Visible= true;
 	 Label2->Visible= true;
 	 Label1->Visible= true;
+
+	 EditName->Enabled=false;
+	 EditOrder->Enabled=false;
+	 EditPhone->Enabled=false;
+	 EditAddress->Enabled=false;
+
 	 ShowRecord();
 
 }
@@ -151,12 +170,14 @@ void __fastcall TForm1::ButtonOpen1Click(TObject *Sender)
 
 void __fastcall TForm1::ButtonDeleteClick(TObject *Sender)
 {
-	if(iMax>0){
+	if(iMax>1){
 		orderdb.erase(orderdb.begin()+iCur);
 		iMax--;
+		if(iCur!=0){
 		iCur--;
+		}
 		ShowRecord();
-	}
+    }
 }
 //---------------------------------------------------------------------------
 void __fastcall TForm1::ButtonSearchClick(TObject *Sender)
@@ -181,6 +202,10 @@ void __fastcall TForm1::ButtonSearchClick(TObject *Sender)
 	 LabelCurrent->Visible= true;
 	 Label2->Visible= true;
 	 Label1->Visible= true;
+	 Check1->Visible= true;
+	 Check2->Visible= true;
+	 Check3->Visible= true;
+	 Check4->Visible= true;
 }
 //---------------------------------------------------------------------------
 
@@ -208,6 +233,7 @@ void __fastcall TForm1::N2Click(TObject *Sender)
 	 LabelCurrent->Visible= true;
 	 Label2->Visible= true;
 	 Label1->Visible= true;
+	 Button2->Visible= true;
 
 }
 //---------------------------------------------------------------------------
@@ -240,21 +266,37 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 	 LabelCurrent->Visible= true;
 	 Label2->Visible= true;
 	 Label1->Visible= true;
+
+	 EditName->Enabled=false;
+	 EditOrder->Enabled=false;
+	 EditPhone->Enabled=false;
+	 EditAddress->Enabled=false;
+
+	 Button2->Visible= false;
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TForm1::SearchClick(TObject *Sender)
 {
-	if(orderdb.size()!=0){
-		order s;
-		std::vector<order>::iterator p;
-		strcpy(s.name,AnsiString(EditSearch->Text).c_str());
-		strcpy(s.phone,AnsiString(EditSearch->Text).c_str());
-		strcpy(s.address,AnsiString(EditSearch->Text).c_str());
-		p=std::find(orderdb.begin(),orderdb.end(),s);
-		iCur=p-orderdb.begin();
-		if(iCur<iMax) ShowRecord();
+	order n;
+	std::vector<order>::iterator p;
+	if (Check1->Checked == true) {
+		n.order = EditSearch->Text.ToInt();
 	}
+	if (Check2->Checked == true) {
+		strcpy(n.name,AnsiString(EditSearch->Text).c_str());
+	}
+	if (Check3->Checked == true) {
+		strcpy(n.address,AnsiString(EditSearch->Text).c_str());
+	}
+	if (Check4->Checked == true) {
+		strcpy(n.phone,AnsiString(EditSearch->Text).c_str());
+	}
+
+	p=std::find(orderdb.begin(),orderdb.end(),n);
+	iCur=p-orderdb.begin();
+	if(iCur<iMax) ShowRecord();
+
 }
 //---------------------------------------------------------------------------
 
@@ -280,6 +322,38 @@ void __fastcall TForm1::ButtonCloseClick(TObject *Sender)
 	 LabelCurrent->Visible= true;
 	 Label2->Visible= true;
 	 Label1->Visible= true;
+	 Check1->Visible= false;
+	 Check2->Visible= false;
+	 Check3->Visible= false;
+	 Check4->Visible= false;
 }
 //---------------------------------------------------------------------------
+
+void __fastcall TForm1::ButtonEditClick(TObject *Sender)
+{
+	 EditName->Enabled=true;
+	 EditOrder->Enabled=true;
+	 EditPhone->Enabled=true;
+	 EditAddress->Enabled=true;
+	 Button1->Visible= true;
+	 EditName->Visible= true;
+	 EditOrder->Visible= true;
+	 EditPhone->Visible= true;
+	 EditAddress->Visible= true;
+	 LabelName->Visible= true;
+	 LabelOrder->Visible= true;
+	 LabelPhone->Visible= true;
+	 LabelAddress->Visible= true;
+	 LabelCount->Visible= true;
+	 LabelCurrent->Visible= true;
+	 Label2->Visible= true;
+	 Label1->Visible= true;
+	 Button2->Visible= true;
+
+	 ButtonRight->Visible= false;
+	 ButtonLeft->Visible= false;
+}
+//---------------------------------------------------------------------------
+
+
 

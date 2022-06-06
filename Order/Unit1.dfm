@@ -3,7 +3,7 @@ object Form1: TForm1
   Top = 0
   Caption = #1047#1072#1082#1072#1079#1099
   ClientHeight = 286
-  ClientWidth = 295
+  ClientWidth = 291
   Color = clInactiveCaption
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -97,6 +97,13 @@ object Form1: TForm1
     Top = 75
     Width = 151
     Height = 21
+    Color = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 2
   end
   object EditName: TEdit
@@ -104,6 +111,7 @@ object Form1: TForm1
     Top = 102
     Width = 169
     Height = 21
+    Color = clWhite
     TabOrder = 3
   end
   object EditAddress: TEdit
@@ -111,6 +119,7 @@ object Form1: TForm1
     Top = 129
     Width = 170
     Height = 21
+    Color = clWhite
     TabOrder = 4
   end
   object EditPhone: TEdit
@@ -118,6 +127,7 @@ object Form1: TForm1
     Top = 156
     Width = 170
     Height = 21
+    Color = clWhite
     TabOrder = 5
   end
   object ButtonAdd: TButton
@@ -180,6 +190,8 @@ object Form1: TForm1
     Top = 77
     Width = 17
     Height = 17
+    Color = clActiveCaption
+    ParentColor = False
     TabOrder = 12
   end
   object Check2: TCheckBox
@@ -212,6 +224,7 @@ object Form1: TForm1
     ImageIndex = 3
     Images = ImageList1
     TabOrder = 16
+    OnClick = Button2Click
   end
   object OpenDialog1: TOpenDialog
     Left = 8
@@ -226,7 +239,7 @@ object Form1: TForm1
     Left = 136
     Top = 264
     Bitmap = {
-      494C010104000800340010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C0101040008003C0010001000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000002000000001002000000000000020
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -533,7 +546,7 @@ object Form1: TForm1
     Left = 192
     Top = 264
     Bitmap = {
-      494C0101030008004C0020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
+      494C010103000800540020002000FFFFFFFF2110FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000002000000001002000000000000040
       0000000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000

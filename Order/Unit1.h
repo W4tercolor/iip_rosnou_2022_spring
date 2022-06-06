@@ -91,6 +91,7 @@ __published:	// IDE-managed Components
 	void __fastcall SearchClick(TObject *Sender);
 	void __fastcall ButtonCloseClick(TObject *Sender);
 	void __fastcall ButtonEditClick(TObject *Sender);
+	void __fastcall Button2Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);

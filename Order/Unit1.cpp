@@ -176,7 +176,39 @@ void __fastcall TForm1::ButtonDeleteClick(TObject *Sender)
 {
 	if(iMax==1){
 		iMax=0;
-        iCur=0;
+		iCur=0;
+
+		Button1->Hide();
+	EditSearch->Hide();
+	Search->Visible= false;
+		ButtonClose->Visible= false;
+	ButtonRight->Visible= false;
+	 ButtonLeft->Visible= false;
+	 ButtonAdd->Visible= false;
+	 ButtonDelete->Visible= false;
+	 Button1->Visible= false;
+	 EditName->Visible= false;
+	 EditOrder->Visible= false;
+	 EditPhone->Visible= false;
+	 EditAddress->Visible= false;
+	 Form1->EditName->Text="";
+	 Form1->EditOrder->Text="";
+	 Form1->EditPhone->Text="";
+	 Form1->EditAddress->Text="";
+	 LabelName->Visible= false;
+	 LabelOrder->Visible= false;
+	 LabelPhone->Visible= false;
+	 LabelAddress->Visible= false;
+	 LabelCount->Visible= false;
+	 LabelCurrent->Visible= false;
+	 Label2->Visible= false;
+	 Label1->Visible= false;
+	 Check1->Visible= false;
+	 Check2->Visible= false;
+	 Check3->Visible= false;
+	 Check4->Visible= false;
+	 Button2->Visible= false;
+	 ButtonSearch ->Visible= false;
 	}
 	if(iMax>1){
 		orderdb.erase(orderdb.begin()+iCur);
